@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Explore this guestbook!</h1>
+      <div class="note-block">
+        <% for(let i=0; i < noteList.length; i++) { %>
+        <div class="note-card">
+            <p class="note"><%= noteList[i].content %></p>
+            <div class="sub">
+              <div>
+                <span class="">
+                  by&nbsp;<%= noteList[i].name %>
+                </span>
+                -
+                <span class="">
+                  <%= noteList[i].published %>
+                </span>
+              </div>
+            </div>
+        </div>
+        <% } %>
+
+      </div>
+        <a href="/leavenotes" class="link-button">
+          LEAVE A NOTE 
+          &nbsp;<i class="fas fa-pencil-alt"></i>
+        </a>
+        <a href="/" class="link-button">
+          HOME
+          &nbsp;<i class="fas fa-home"></i>
+        </a>
+
+    </div>
+  </body>
+</html>
+
+

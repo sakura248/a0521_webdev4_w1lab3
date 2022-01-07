@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave a note!</title>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Leave a note!</h1>
+    <form action="/leave" method="POST" class="container">
+      <input type="text" name="name" placeholder="Type your name" />
+      <textarea name="body" id="body" rows="10" placeholder="Leave a note"></textarea>
+      <input type="submit" class="btn first" value="LEAVE A NOTE" />
+      <a href="/readnotes" class="link-button">
+        READ NOTES
+        &nbsp;<i class="fas fa-book-open"></i>
+      </a>
+      <a href="/" class="link-button">
+        HOME
+        &nbsp;<i class="fas fa-home"></i>
+      </a>
+  
+  </div>
+</form>
+</body>
+</html>
